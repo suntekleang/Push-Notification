@@ -16,6 +16,9 @@ import { environment } from "src/environments/environment";
 
 
 import { Firebase } from "@ionic-native/firebase/ngx";
+import { MessagingService } from "./Services/messaging.service";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { AngularFireMessagingModule } from "@angular/fire/messaging";
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,11 +29,14 @@ import { Firebase } from "@ionic-native/firebase/ngx";
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAnalyticsModule,
     AngularFirestoreModule,
+    AngularFireAuthModule,
+    AngularFireMessagingModule,
     AppRoutingModule,
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    MessagingService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     Firebase,
   ],

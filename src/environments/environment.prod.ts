@@ -7,7 +7,7 @@ export const environment = {
     projectId: "clarisa-7f59a",
     storageBucket: "clarisa-7f59a.appspot.com",
     messagingSenderId: "659108693291",
-    // appId: "1:659108693291:web:d8d2dffed3285ea3d4716e",
-    // measurementId: "G-QVKLSKZQ67",
+    appId: "1:659108693291:web:d8d2dffed3285ea3d4716e",
+    measurementId: "G-QVKLSKZQ67",
   },
 };
